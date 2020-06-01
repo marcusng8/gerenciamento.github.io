@@ -1,4 +1,4 @@
-if(localStorage.length != 0) window.location.replace("http://127.0.0.1:5500/html/initialScreen.html");
+if(localStorage.length != 0) window.location.replace("https://marcusng8.github.io/gerenciamento.github.io/html/initialScreen.html");
 
 window.onload = () =>{
     btn.disabled = true;
@@ -14,7 +14,7 @@ window.onload = () =>{
         if(nome.value == "rodrigo" && senha.value == "123"){
             let user = {nome:nome.value, senha:senha.value};
             localStorage.setItem('user', JSON.stringify(user));
-            window.location.replace("http://127.0.0.1:5500/html/initialScreen.html");
+            window.location.replace("https://marcusng8.github.io/gerenciamento.github.io/html/initialScreen.html");
         }else alert("O usuário ou senha estão incorretos!");
         evento.preventDefault();
     }
